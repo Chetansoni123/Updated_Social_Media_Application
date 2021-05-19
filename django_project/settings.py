@@ -149,8 +149,8 @@ else: # AWS required keys (Production Only)
     # S3 storage bucket name
     AWS_STORAGE_BUCKET_NAME = 'social-website-bucket'
 
-    AWS_ACCESS_KEY_ID = 'AKIAXPOLLUXYLB3K4XMH'
-    AWS_SECRET_ACCESS_KEY = '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'
+    AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
+    AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
     
     AWS_DEFAULT_ACL = 'public-read'
     AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
